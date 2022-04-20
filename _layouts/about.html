@@ -4,9 +4,10 @@ layout: default
 
 <div class="about-col-wrapper">
   <div class="about-col about-col-1">
-
-    {% if site.github_username %}
-    <img class="user-picture" src="https://github.com/{{ site.github_username }}.png" alt="{{ site.author }}">
+    {% if site.kth_username %}
+      <img class="user-picture" src="https://www.kth.se/files/avatar/{{ site.kth_username }}.png" alt="{{ site.author }}">
+    {% elif site.github_username %}
+      <img class="user-picture" src="https://github.com/{{ site.github_username }}.png" alt="{{ site.author }}">
     {% endif %}
 
     <ul class="contact-list">
